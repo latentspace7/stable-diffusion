@@ -5,7 +5,11 @@ from PIL import Image
 import torch
 from torch.optim import Adam
 from torch.utils.data import DataLoader
+from huggingface_hub import login
 
+HF_ACCESS_TOKEN = os.getenv("HF_ACCESS_TOKEN")
+
+login(HF_ACCESS_TOKEN)
 pipe = StableDiffusion3Pipeline.from_pretrained("stabilityai/stable-diffusion-3-medium", torch_dtype=torch.float16)
 
 pipe.to("cuda")
