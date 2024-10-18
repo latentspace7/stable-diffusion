@@ -8,7 +8,7 @@ cd /workspace
 
 git clone https://${GITHUB_TOKEN}@github.com/dolwinf/stable-diffusion.git
 
-cd stable-diff
+cd stable-diffusion
 
 pip install -r requirements.txt
 

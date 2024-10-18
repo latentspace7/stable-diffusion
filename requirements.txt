@@ -3,3 +3,7 @@ datasets
 torch
 torchvision
 huggingface-hub
+difussers
+protobuf
+sentencepiece
+pandas
