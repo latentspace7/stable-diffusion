@@ -9,7 +9,7 @@ from huggingface_hub import login
 import pandas as pd
 HF_ACCESS_TOKEN = os.getenv("HF_ACCESS_TOKEN")
 
-login("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")
+login(HF_ACCESS_TOKEN)
 pipe = StableDiffusion3Pipeline.from_pretrained("stabilityai/stable-diffusion-3-medium-diffusers", torch_dtype=torch.float16)
 
 pipe.to("cuda")
